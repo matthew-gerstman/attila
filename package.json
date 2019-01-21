@@ -50,6 +50,6 @@
   "scripts": {
     "zip": "git archive --format=zip HEAD -o dist/matthew-atilla.zip",
     "checkin": "git add assets && git commit -m \"Build Assets\"",
-    "build": "grunt build && npm run version && npm run zip"
+    "build": "grunt build && npm version patch && npm run zip"
   }
 }
