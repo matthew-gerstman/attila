@@ -2,11 +2,11 @@
    Includes
    ========================================================================== */
 
-@import "normalize";
-@import "colors";
-@import "icons";
-@import "fonts";
-@import "highlight";
+@import 'normalize';
+@import 'colors';
+@import 'icons';
+@import 'fonts';
+@import 'highlight';
 
 /* ==========================================================================
    Basics
@@ -34,7 +34,7 @@ html.menu-active,
 }
 
 body {
-  font: 400 2em / 1.5em "Cardo", serif;
+  font: 400 2em / 1.5em 'Cardo', serif;
   color: $color-blue-30;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -45,7 +45,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   transition: all ease-out 0.2s;
 }
 
@@ -66,7 +66,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   text-rendering: optimizeLegibility;
   color: $color-black;
 }
@@ -75,26 +75,26 @@ h1 {
   font-size: 1.75em;
   line-height: 1em;
   text-indent: -1px;
-  margin: 1em 0 0.25em;
+  margin: 1em 0 0.5em;
 }
 
 h2 {
   font-size: 1.5em;
   line-height: 1.111em;
   text-indent: -1px;
-  margin: 1.143em 0 0.25em;
+  margin: 1.143em 0 0.5em;
 }
 
 h3 {
   font-size: 1.25em;
   line-height: 1.334em;
-  margin: 1em 0 0.25em;
+  margin: 1em 0 0.5em;
 }
 
 h4 {
   font-size: 1em;
   line-height: 1.2em;
-  margin: 1.2em 0 0.25em;
+  margin: 1.2em 0 0.5em;
 }
 
 h1 a,
@@ -128,7 +128,7 @@ ol > li:before {
   position: absolute;
   width: 1.5em;
   margin-left: -2em;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 1em;
   font-weight: 500;
   line-height: 1.5em;
@@ -137,14 +137,14 @@ ol > li:before {
 }
 ul > li:before {
   margin-top: 0.25em;
-  content: "*";
+  content: '*';
 }
 ol {
   list-style-type: none;
   counter-reset: item;
 }
 ol > li:before {
-  content: counter(item) ". " !important;
+  content: counter(item) '. ' !important;
   counter-increment: item;
 }
 
@@ -206,7 +206,7 @@ dl {
   padding-left: 30px;
 }
 dl dt {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
   font-size: 0.75em;
   line-height: 1.25em;
@@ -215,7 +215,7 @@ dl dt {
   margin-bottom: 0.334em;
 }
 dl dt:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 1em;
   height: 1px;
@@ -327,7 +327,7 @@ table td {
   border: 1px solid $color-gray-90;
 }
 table th {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
   font-size: 0.75em;
   line-height: 1.25em;
@@ -342,7 +342,7 @@ table td:after {
   top: -1px;
   padding: 1px;
   z-index: -1;
-  content: "";
+  content: '';
   background: $color-gray-98;
 }
 
@@ -353,7 +353,7 @@ img {
   margin: 0 0 2em;
 }
 
-img[src$="#full"] {
+img[src$='#full'] {
   max-width: none;
   width: 100vw;
   margin: 3em 0;
@@ -380,7 +380,7 @@ img[src$="#full"] {
   }
 
   figcaption {
-    font-family: "Fira Sans", sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     color: $color-blue-60;
     text-align: center;
     max-width: 32em;
@@ -402,7 +402,7 @@ img[src$="#full"] {
   width: 75vw;
 
   figcaption {
-    font-family: "Fira Sans", sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     color: $color-blue-60;
     text-align: center;
     max-width: 32em;
@@ -476,7 +476,7 @@ img[src$="#full"] {
 
   &:before,
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     z-index: 1;
     width: 50%;
@@ -518,7 +518,7 @@ img[src$="#full"] {
   left: 50%;
   bottom: 0;
   margin-left: -16em;
-  content: "";
+  content: '';
   background: $color-gray-90;
 }
 #blog-header.has-cover {
@@ -556,7 +556,7 @@ img[src$="#full"] {
   left: 0;
   bottom: 0;
   z-index: 8;
-  content: "";
+  content: '';
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 0%,
@@ -581,7 +581,7 @@ img[src$="#full"] {
   z-index: 10;
   margin: 0;
   padding: 0;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 700;
   font-size: 2em;
   line-height: 1em;
@@ -599,7 +599,7 @@ img[src$="#full"] {
   color: inherit;
 }
 .blog-description {
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   position: relative;
   display: block;
   z-index: 10;
@@ -666,7 +666,7 @@ img[src$="#full"] {
   margin-bottom: 1em;
   padding: 0.5em 1.25em;
   border: 1px solid $color-blue-80;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 0.75em;
   line-height: 1.667em;
   text-shadow: none;
@@ -715,7 +715,7 @@ img[src$="#full"] {
   border-left: 1px solid $color-gray-90;
   z-index: 400;
   overflow: hidden;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   box-shadow: inset -2px 0 7px rgba(0, 0, 0, 0.1);
   transform: translate3d(16em, 0, 0);
   transition: all ease-out 0.25s;
@@ -751,7 +751,7 @@ img[src$="#full"] {
   left: 50%;
   top: 50%;
   margin-left: -0.5em;
-  content: "";
+  content: '';
   background: $color-blue-60;
   transition: all ease 0.3s;
 }
@@ -799,7 +799,7 @@ img[src$="#full"] {
   left: 1.5em;
   bottom: 0;
   margin: auto;
-  content: "";
+  content: '';
   background: rgba(0, 0, 0, 0.1);
 }
 #menu li:last-child:before {
@@ -809,7 +809,7 @@ img[src$="#full"] {
 }
 #menu li.active:after {
   position: absolute;
-  content: "";
+  content: '';
   width: 0.2em;
   height: 100%;
   left: 0;
@@ -872,7 +872,7 @@ img[src$="#full"] {
 #footer {
   position: relative;
   z-index: 20;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   line-height: 1em;
   padding-bottom: 6em;
 }
@@ -913,7 +913,7 @@ img[src$="#full"] {
   left: 50%;
   bottom: 0;
   margin-left: -16em;
-  content: "";
+  content: '';
   background: $color-gray-90;
 }
 #blog-author .post-author {
@@ -957,7 +957,7 @@ img[src$="#full"] {
   left: 50%;
   bottom: 0;
   margin-left: -16em;
-  content: "";
+  content: '';
   background: $color-gray-90;
 }
 .container .post.featured .post-title:after {
@@ -967,11 +967,11 @@ img[src$="#full"] {
   left: -1.75em;
   top: 0;
   margin-top: -0.25em;
-  font-family: "icons";
+  font-family: 'icons';
   font-size: 0.5em;
   font-style: normal;
   font-weight: normal;
-  content: "\e808";
+  content: '\e808';
   color: $color-yellow-100;
   text-align: center;
 }
@@ -990,7 +990,7 @@ img[src$="#full"] {
   left: 50%;
   top: 0;
   margin-left: -16em;
-  content: "";
+  content: '';
   background: $color-gray-90;
 }
 
@@ -1025,7 +1025,7 @@ img[src$="#full"] {
   left: 0;
   bottom: 0;
   z-index: 8;
-  content: "";
+  content: '';
   background: -webkit-linear-gradient(
     top,
     rgba(0, 0, 0, 0) 0%,
@@ -1064,7 +1064,7 @@ img[src$="#full"] {
   z-index: 10;
   display: block;
   margin-bottom: 1.334em;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 0.75em;
   font-weight: 400;
   line-height: 1.334em;
@@ -1167,7 +1167,7 @@ img[src$="#full"] {
 .post-tags {
   max-width: 75%;
   float: left;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 .post-tags a {
   display: inline-block;
@@ -1203,7 +1203,7 @@ img[src$="#full"] {
   border-top: 1px solid $color-gray-90;
   border-bottom: 1px solid $color-gray-90;
   clear: both;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 .post-author-avatar {
   position: relative;
@@ -1282,7 +1282,7 @@ img[src$="#full"] {
   border-bottom: 1px solid $color-gray-90;
   clear: both;
   text-align: center;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 .post-authors-info {
   margin: 0 0 0.334em;
@@ -1317,7 +1317,7 @@ img[src$="#full"] {
   margin: 0;
   padding: 0.5em 1.25em;
   border: 1px solid $color-blue-80;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 0.75em;
   line-height: 1.334em;
   color: $color-blue-60;
@@ -1406,7 +1406,7 @@ img[src$="#full"] {
 }
 .post-nav:after {
   position: absolute;
-  content: "";
+  content: '';
   width: 1px;
   height: 100%;
   left: 50%;
@@ -1481,7 +1481,7 @@ img[src$="#full"] {
   height: 2em;
   margin: 0;
   padding: 2em 0;
-  font-family: "Fira Sans", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
 }
 .pagination:after {
   position: absolute;
@@ -1490,7 +1490,7 @@ img[src$="#full"] {
   left: 50%;
   bottom: 0;
   margin-left: -16em;
-  content: "";
+  content: '';
   background: $color-gray-90;
 }
 .pagination a {
@@ -1642,7 +1642,7 @@ img[src$="#full"] {
   }
   .post-nav-next .post-nav-teaser:after {
     position: absolute;
-    content: "";
+    content: '';
     width: 100%;
     height: 1px;
     left: 0;
