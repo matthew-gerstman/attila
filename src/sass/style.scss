@@ -346,6 +346,16 @@ table td:after {
   background: $color-gray-98;
 }
 
+table.clean-table {
+  border: none;
+  background: $color-white;
+}
+
+table.clean-table th,
+table.clean-table td {
+  border: none;
+}
+
 img {
   display: block;
   max-width: 100%;
