@@ -21,8 +21,12 @@
 				{{/if}}
 			</nav>
 			<h1 class="post-title">{{{title}}}</h1>
-			<span class="post-meta">{{authors separator=", "}} | <a href="https://twitter.com/MatthewGerstman">@MatthewGerstman</a>
-				| <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></span>
+			<span class="post-meta">
+				<a href="https://twitter.com/MatthewGerstman">@MatthewGerstman</a>
+				| <a href="https://theconsolelog.com">The Console Log</a>
+				| <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+
+			</span>
 			{{#if feature_image}}<div class="post-cover cover" style="background-image: url('{{feature_image}}');"></div>{{/if}}
 		</div>
 	</header>
@@ -77,6 +81,9 @@
 							{{#if location}}
 							<span class="post-author-location"><i class="ic ic-location"></i> {{location}}</span>
 							{{/if}}
+
+							<span class="post-author-podcast"><i class="ic ic-link"></i> <a href="http://theconsolelog.com">{{t "Podcast"}}</a></span>
+
 							{{#if website}}
 							<span class="post-author-website"><i class="ic ic-link"></i> <a href="{{website}}">{{t "Website"}}</a></span>
 							{{/if}}
