@@ -7,12 +7,11 @@
 			<nav id="navigation">
 				{{#if @blog.logo}}
 				<span class="blog-logo">
-					<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{t "Blog Logo"}}" /></a>
+					<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{t "Blog Logo"}}" /></a> -
 					{{#primary_tag}}
-					<div class="primary-tag">
+					<span class="primary-tag">
 						<a href="{{url}}">{{name}}</a>
-						<span class="description">{{description}}</span>
-					</div>
+					</span>
 					{{/primary_tag}}
 				</span>
 				{{else}}
