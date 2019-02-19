@@ -1043,7 +1043,9 @@ img[src$='#full'] {
 #post-header .blog-logo-blue {
   color: $primary-color;
 }
-
+#post-header .blog-logo-tag {
+  display: inline-block;
+}
 #post-header .blog-logo-tag::first-letter {
   color: $primary-color;
 }
