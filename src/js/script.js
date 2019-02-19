@@ -48,11 +48,11 @@ jQuery(function($) {
       })
       viewport.scrollTop() < cover.height()
         ? html.addClass('cover-active')
-        : html.removeClass('cover-inactive')
+        : html.removeClass('cover-active')
 
       viewport.scrollTop() >= cover.height()
         ? html.addClass('cover-inactive')
-        : html.removeClass('cover-active')
+        : html.removeClass('cover-inactive')
     }
   }
   prlx()
