@@ -6,9 +6,12 @@
   <div class="inner">
     <nav id="navigation">
       {{#if @blog.logo}}
+      {{#primary_tag}}
       <span class="blog-logo">
-        <a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{t "Blog Logo"}}" /></a>
+        <a href="{{url}}"><img src="{{@blog.logo}}" alt="{{t "Blog Logo"}}" /></a>
+        <div style="display:none">{{name}}</div>
       </span>
+      {{/primary_tag}}
       {{else}}
       <span id="home-button" class="nav-button">
         <a class="home-button" href="{{@blog.url}}" title="{{t "Home"}}"><i class="ic ic-arrow-left"></i>
