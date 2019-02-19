@@ -1026,13 +1026,16 @@ img[src$='#full'] {
 #post-header .blog-logo {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
-  color: black;
   max-width: none;
 }
-.cover-active {
+.has-cover {
   #post-header .blog-logo {
     color: white;
-    animation: none;
+  }
+}
+.cover-inactive {
+  #post-header .blog-logo {
+    color: black;
   }
 }
 #post-header .blog-logo a {
