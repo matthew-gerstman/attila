@@ -8,8 +8,13 @@
       {{#if @blog.logo}}
       {{#primary_tag}}
       <span class="blog-logo">
-        <a href="{{url}}"><img src="{{@blog.logo}}" alt="{{t "Blog Logo"}}" /></a>
-        <span class="blog-logo-blue blog-logo-tag">{{name}}</span>
+        <a href="{{url}}">
+          <span>
+            M<span class="blog-logo-blue">T</span>G
+          </span>
+          <span class="blog-logo-tag"> - </span>
+          <span class="blog-logo-blue blog-logo-tag">{{name}}</span>
+        </a>
       </span>
       {{/primary_tag}}
       {{else}}

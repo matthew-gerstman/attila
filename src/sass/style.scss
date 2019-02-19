@@ -1024,7 +1024,18 @@ img[src$='#full'] {
 }
 
 #post-header .blog-logo {
-  color: white;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  color: black;
+  max-width: none;
+}
+.cover-active {
+  #post-header .blog-logo {
+    color: white;
+  }
+}
+#post-header .blog-logo a {
+  color: inherit;
 }
 
 #post-header .blog-logo-blue {
