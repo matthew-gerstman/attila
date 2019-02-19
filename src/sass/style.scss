@@ -1032,18 +1032,22 @@ img[src$='#full'] {
 .cover-active {
   #post-header .blog-logo {
     color: white;
+    animation: none;
   }
 }
 #post-header .blog-logo a {
   color: inherit;
+  font-weight: inherit;
 }
 
 #post-header .blog-logo-blue {
   color: $primary-color;
 }
-#post-header .blog-logo-tag {
-  display: none;
+
+#post-header .blog-logo-tag::first-letter {
+  color: $primary-color;
 }
+
 .post-cover {
   position: absolute;
   width: 100%;
