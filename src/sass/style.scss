@@ -1027,12 +1027,17 @@ img[src$='#full'] {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
   max-width: none;
+  color: white;
 }
 
 .cover-active {
   #post-header .blog-logo {
     color: white;
   }
+}
+
+#post-header.no-cover .blog-logo {
+  color: black;
 }
 .cover-inactive {
   #post-header .blog-logo {

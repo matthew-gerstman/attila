@@ -2,7 +2,7 @@
   <span class="progress-bar"></span>
 </div>
 
-<header id="post-header" {{#if feature_image}} class="has-cover" {{/if}}>
+<header id="post-header" {{#if feature_image}} class="has-cover" {{else}} class="no-cover" {{/if}}>
   <div class="inner">
     <nav id="navigation">
       {{#if @blog.logo}}
