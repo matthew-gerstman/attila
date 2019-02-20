@@ -7,7 +7,7 @@
     <nav id="navigation">
       {{#if @blog.logo}}
       <span class="blog-logo">
-        <a {{#if primary_tag}} href="{{primary_tag.url}}" {{else}} href="{{@blog.url}}" {{/if}}>
+        <a {{#if primary_tag}} href="{{@primary_tag.url}}" {{else}} href="{{@blog.url}}" {{/if}}>
           <span>
             M<span class="blog-logo-blue">T</span>G
           </span>
