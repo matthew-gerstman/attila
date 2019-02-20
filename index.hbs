@@ -3,7 +3,17 @@
 		<nav id="navigation">
 			{{#if @blog.logo}}
 			<span class="blog-logo">
-				<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{t "Blog Logo"}}" /></a>
+				<a href="{{@blog.url}}">
+					<span class="blog-logo">
+						<a href="{{url}}">
+							<span>
+								M<span class="blog-logo-blue">T</span>G
+							</span>
+							<span> - </span>
+							<span class="blog-logo-tag">{{name}}</span>
+						</a>
+					</span>
+				</a>
 			</span>
 			{{/if}}
 			{{#if @blog.navigation}}
@@ -24,14 +34,14 @@
 		<div class="blog-cover cover" style="background-image: url('{{img_url @blog.cover_image}}');"></div>
 		{{/if}}
 	</div>
-	</header>
+</header>
 
-	<div id="index" class="container">
+<div id="index" class="container">
 
-		<main class="content" role="main">
+	<main class="content" role="main">
 
-			{{> "loop"}}
+		{{> "loop"}}
 
-		</main>
+	</main>
 
-	</div>
+</div>
