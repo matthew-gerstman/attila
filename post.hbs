@@ -6,17 +6,17 @@
   <div class="inner">
     <nav id="navigation">
       {{#if @blog.logo}}
-      {{#primary_tag}}
       <span class="blog-logo">
-        <a href="{{url}}">
+        <a {{#if primary_tag}} href="{{primary_tag.url}}" {{else}} href="{{@blog.url}}" {{/if}}>
           <span>
             M<span class="blog-logo-blue">T</span>G
           </span>
+          {{#primary_tag}}
           <span> - </span>
           <span class="blog-logo-tag">{{name}}</span>
+          {{/primary_tag}}
         </a>
       </span>
-      {{/primary_tag}}
       {{else}}
       <span id="home-button" class="nav-button">
         <a class="home-button" href="{{@blog.url}}" title="{{t "Home"}}"><i class="ic ic-arrow-left"></i>
