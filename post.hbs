@@ -5,7 +5,6 @@
 <header id="post-header" {{#if feature_image}} class="has-cover" {{else}} class="no-cover" {{/if}}>
   <div class="inner">
     <nav id="navigation">
-      {{#if @blog.logo}}
       <span class="blog-logo">
         <a {{#if primary_tag}} {{#primary_tag}} href="{{url}}" {{/primary_tag}} {{else}} href="{{@blog.url}}" {{/if}}>
           <span>
@@ -17,12 +16,6 @@
           {{/primary_tag}}
         </a>
       </span>
-      {{else}}
-      <span id="home-button" class="nav-button">
-        <a class="home-button" href="{{@blog.url}}" title="{{t "Home"}}"><i class="ic ic-arrow-left"></i>
-          {{t "Home"}}</a>
-      </span>
-      {{/if}}
       {{#if @blog.navigation}}
       <span id="menu-button" class="nav-button">
         <a class="menu-button"><i class="ic ic-menu"></i> {{t "Menu"}}</a>
