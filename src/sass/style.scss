@@ -1741,3 +1741,9 @@ img[src$='#full'] {
     color: $color-gray-98;
   }
 }
+@media (prefers-dark-interface) {
+  body {
+    background-color: $color-black;
+    color: $color-gray-98;
+  }
+}
