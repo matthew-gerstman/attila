@@ -1734,3 +1734,8 @@ img[src$='#full'] {
     display: none;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  background-color: $color-black;
+  color: $color-gray-98;
+}
