@@ -1789,3 +1789,8 @@ img[src$='#full'] {
     display: none;
   }
 }
+@media (prefers-dark-interface) {
+  body {
+    background-color: var(--color-gray-98);
+  }
+}
