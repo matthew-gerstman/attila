@@ -21,3 +21,53 @@ $color-social-facebook: #3c5a98;
 $color-social-googleplus: #d14836;
 
 $primary-color: $color-blue-t; // define primary color
+
+:root {
+  --color-white: $color-white;
+  --color-black: $color-black;
+
+  --color-gray-98: $color-gray-98;
+  --color-gray-95: $color-gray-95;
+  --color-gray-90: $color-gray-90;
+
+  --color-blue-80: $color-blue-80;
+  --color-blue-60: $color-blue-60;
+
+  --color-blue-30: $color-blue-30;
+  --color-blue-15: $color-blue-15;
+
+  --color-blue-t: $color-blue-t;
+
+  --color-yellow-100: $color-yellow-100;
+  --color-red-95: $color-red-95;
+
+  --color-social-twitter: $color-social-twitter;
+  --color-social-facebook: $color-social-facebook;
+  --color-social-googleplus: $color-social-googleplus;
+
+  --primary-color: $color-blue-t; // define primary color
+}
+
+@media (prefers-dark-interface), (prefers-color-scheme: dark) {
+  --color-white: #000000;
+  --color-black: #ffffff;
+
+  --color-gray-98: #212226;
+  --color-gray-95: #212226;
+  --color-gray-90: #151516;
+
+  --color-blue-80: #8a9199;
+  --color-blue-60: #c2c7cc;
+
+  --color-blue-30: #f2f2f0;
+  --color-blue-15: #e5e4e1;
+
+  --color-blue-t: #1982c4;
+
+  --color-yellow-100: #ffc336;
+  --color-red-95: #f26a3d;
+
+  --color-social-twitter: #3ea9dd;
+  --color-social-facebook: #3c5a98;
+  --color-social-googleplus: #d14836;
+}

@@ -36,6 +36,7 @@ html.menu-active,
 body {
   font: 400 2em / 1.5em 'Cardo', serif;
   color: $color-blue-30;
+  color: var(--color-blue-30);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,6 +52,7 @@ textarea {
 
 a {
   color: $color-blue-15;
+  color: var(--color-blue-15);
   text-decoration: none;
   font-weight: 400;
   transition: all ease-out 0.2s;
@@ -58,6 +60,7 @@ a {
 a:hover,
 a:focus {
   color: $color-black;
+  color: var(--color-black);
 }
 
 h1,
@@ -69,6 +72,7 @@ h6 {
   font-family: 'Fira Sans', sans-serif;
   text-rendering: optimizeLegibility;
   color: $color-black;
+  color: var(--color-black);
 }
 
 h1 {
@@ -134,6 +138,7 @@ ol > li:before {
   line-height: 1.5em;
   text-align: right;
   color: $color-black;
+  color: var(--color-black);
 }
 ul > li:before {
   margin-top: 0.25em;
@@ -174,6 +179,7 @@ blockquote {
   font-style: italic;
   font-weight: 400;
   color: $color-blue-30;
+  color: var(--color-blue-30);
   background: $color-gray-98;
 }
 blockquote p {
@@ -189,16 +195,19 @@ em,
 i {
   font-style: italic;
   color: $color-blue-15;
+  color: var(--color-blue-15);
 }
 strong,
 b {
   font-weight: 700;
   color: $color-blue-15;
+  color: var(--color-blue-15);
 }
 
 small {
   font-size: 0.9em;
   color: $color-blue-30;
+  color: var(--color-blue-30);
 }
 
 dl {
@@ -212,6 +221,7 @@ dl dt {
   line-height: 1.25em;
   font-weight: 700;
   color: $color-black;
+  color: var(--color-black);
   margin-bottom: 0.334em;
 }
 dl dt:before {
@@ -230,6 +240,7 @@ dl dd {
 
 mark {
   background-color: $color-yellow-100;
+  background-color: var(--color-yellow-100);
 }
 code,
 tt {
@@ -273,6 +284,7 @@ pre .lines .line {
   display: block;
   padding-right: 0.334em;
   color: $color-blue-30;
+  color: var(--color-blue-30);
 }
 
 pre code,
@@ -302,6 +314,7 @@ kbd {
   padding: 1px 8px;
   border: $color-gray-90 1px solid;
   color: $color-blue-30;
+  color: var(--color-blue-30);
   text-shadow: $color-white 0 1px 0;
   font-size: 0.9em;
   font-weight: bold;
@@ -333,6 +346,7 @@ table th {
   line-height: 1.25em;
   padding: 0.667em;
   color: $color-black;
+  color: var(--color-black);
 }
 table td:after {
   position: absolute;
@@ -392,6 +406,7 @@ img[src$='#full'] {
   figcaption {
     font-family: 'Fira Sans', sans-serif;
     color: $color-blue-60;
+    color: var(--color-blue-60);
     text-align: center;
     max-width: 32em;
     margin: auto;
@@ -414,6 +429,7 @@ img[src$='#full'] {
   figcaption {
     font-family: 'Fira Sans', sans-serif;
     color: $color-blue-60;
+    color: var(--color-blue-60);
     text-align: center;
     max-width: 32em;
     margin: auto;
@@ -606,6 +622,7 @@ img[src$='#full'] {
 }
 .has-cover .blog-name {
   color: $color-white;
+  color: var(--color-white);
 }
 .blog-name a {
   text-decoration: none;
@@ -627,6 +644,7 @@ img[src$='#full'] {
 }
 .has-cover .blog-description {
   color: $color-white;
+  color: var(--color-white);
 }
 
 #wrapper {
@@ -685,6 +703,7 @@ img[src$='#full'] {
   line-height: 1.667em;
   text-shadow: none;
   color: $color-blue-60;
+  color: var(--color-blue-60);
   cursor: pointer;
   background: $color-white;
   transition: color, border-color ease 0.3s;
@@ -693,17 +712,22 @@ img[src$='#full'] {
 .nav-button a:hover,
 .nav-button a:focus {
   color: $primary-color;
+  color: var(--primary-color);
   border-color: $primary-color;
+  border-color: var(--primary-color);
 }
 .cover-active .nav-button a {
   color: $color-white;
+  color: var(--color-white);
   border-color: rgba(255, 255, 255, 0.5);
   background: transparent;
 }
 .cover-active .nav-button a:hover,
 .cover-active .nav-button a:focus {
   color: $color-white;
+  color: var(--color-white);
   border-color: $color-white;
+  border-color: var(--color-white);
 }
 .nav-button a i {
   display: inline-block;
@@ -756,6 +780,7 @@ img[src$='#full'] {
 #menu .close-button:focus {
   transform: rotate(180deg);
   border-color: $primary-color;
+  border-color: var(--primary-color);
 }
 #menu .close-button:after,
 #menu .close-button:before {
@@ -834,6 +859,7 @@ img[src$='#full'] {
   display: block;
   padding: 1.25em 1.5em;
   color: $color-blue-15;
+  color: var(--color-blue-15);
   white-space: nowrap;
   text-overflow: ellipsis;
   font-weight: 400;
@@ -841,6 +867,7 @@ img[src$='#full'] {
 #menu li a:hover,
 #menu li a:focus {
   color: $color-black;
+  color: var(--color-black);
   background: rgba(0, 0, 0, 0.05);
 }
 #menu li a i {
@@ -851,6 +878,7 @@ img[src$='#full'] {
 }
 #menu li.active a {
   color: $color-black;
+  color: var(--color-black);
   font-weight: 500;
 }
 
@@ -953,6 +981,7 @@ img[src$='#full'] {
   letter-spacing: 0.025em;
   line-height: 1.334em;
   color: $color-white;
+  color: var(--color-white);
 }
 #blog-author.has-cover .post-author-about {
   margin-top: -0.667em;
@@ -987,6 +1016,7 @@ img[src$='#full'] {
   font-weight: normal;
   content: '\e808';
   color: $color-yellow-100;
+  color: var(--color-yellow-100);
   text-align: center;
 }
 
@@ -1058,12 +1088,14 @@ img[src$='#full'] {
 #blog-header .blog-logo-blue,
 #post-header .blog-logo-blue {
   color: $primary-color;
+  color: var(--primary-color);
 }
 #post-header .blog-logo-tag {
   display: inline-block;
 }
 #post-header .blog-logo-tag::first-letter {
   color: $primary-color;
+  color: var(--primary-color);
 }
 
 .post-cover {
@@ -1108,9 +1140,11 @@ img[src$='#full'] {
   font-weight: 700;
   text-indent: -1px;
   color: $color-black;
+  color: var(--color-black);
 }
 .has-cover .post-title {
   color: $color-white;
+  color: var(--color-white);
 }
 .post-title a {
   text-decoration: none;
@@ -1127,9 +1161,11 @@ img[src$='#full'] {
   font-weight: 400;
   line-height: 1.334em;
   color: $color-blue-60;
+  color: var(--color-blue-60);
 }
 .has-cover .post-meta {
   color: $color-white;
+  color: var(--color-white);
   opacity: 0.75;
 }
 .post-meta a {
@@ -1173,6 +1209,7 @@ img[src$='#full'] {
 .post-content a:hover,
 .post-content a:focus {
   color: $primary-color;
+  color: var(--primary-color);
 }
 
 /* ==========================================================================
@@ -1199,12 +1236,14 @@ img[src$='#full'] {
   text-align: center;
   text-decoration: none;
   color: $color-white;
+  color: var(--color-white);
   border-radius: 2px;
   transition: all ease 0.3s;
 }
 .post-share a:hover,
 .post-share a:focus {
   background-color: $color-blue-15;
+  background-color: var(--color-blue-15);
 }
 .post-share a i {
   color: inherit;
@@ -1215,12 +1254,15 @@ img[src$='#full'] {
 }
 .post-share .twitter {
   background-color: $color-social-twitter;
+  background-color: var(--color-social-twitter);
 }
 .post-share .facebook {
   background-color: $color-social-facebook;
+  background-color: var(--color-social-facebook);
 }
 .post-share .googleplus {
   background-color: $color-social-googleplus;
+  background-color: var(--color-social-googleplus);
 }
 .post-tags {
   max-width: 75%;
@@ -1239,6 +1281,7 @@ img[src$='#full'] {
   text-align: center;
   text-decoration: none;
   color: $primary-color;
+  color: var(--primary-color);
   border-radius: 2em;
   transition: all ease 0.3s;
   box-sizing: border-box;
@@ -1247,6 +1290,7 @@ img[src$='#full'] {
 .post-tags a:focus {
   background: $primary-color;
   color: $color-white;
+  color: var(--color-white);
 }
 
 /* ==========================================================================
@@ -1379,6 +1423,7 @@ img[src$='#full'] {
   font-size: 0.75em;
   line-height: 1.334em;
   color: $color-blue-60;
+  color: var(--color-blue-60);
   text-align: center;
   cursor: pointer;
   transition: all ease 0.3s;
@@ -1387,7 +1432,9 @@ img[src$='#full'] {
 .post-comments-activate:hover,
 .post-comments-activate:focus {
   color: $primary-color;
+  color: var(--primary-color);
   border-color: $primary-color;
+  border-color: var(--primary-color);
 }
 .activated .post-comments-activate {
   display: none;
@@ -1429,10 +1476,12 @@ img[src$='#full'] {
 
       &:hover {
         border-color: $color-blue-60;
+        border-color: var(--color-blue-60);
       }
 
       &:focus {
         border-color: $color-red-95;
+        border-color: var(--color-red-95);
       }
     }
 
@@ -1443,6 +1492,7 @@ img[src$='#full'] {
       padding: 0 1em;
       font-weight: 500;
       color: $color-white;
+      color: var(--color-white);
       background: $color-red-95;
       border: 0;
       appearance: none;
@@ -1504,6 +1554,7 @@ img[src$='#full'] {
   text-align: center;
   transition: all ease-out 0.3s;
   color: $color-gray-90;
+  color: var(--color-gray-90);
 }
 .post-nav-next i {
   left: 0;
@@ -1516,6 +1567,7 @@ img[src$='#full'] {
 .post-nav a:hover i,
 .post-nav a:focus i {
   color: $primary-color;
+  color: var(--primary-color);
 }
 .post-nav-title {
   margin: 0 0 0.5em;
@@ -1564,6 +1616,7 @@ img[src$='#full'] {
   text-align: center;
   text-decoration: none;
   color: $color-blue-60;
+  color: var(--color-blue-60);
   transition: all ease 0.3s;
   border-radius: 2em;
 }
@@ -1578,7 +1631,9 @@ img[src$='#full'] {
 .pagination a:hover,
 .pagination a:focus {
   color: $primary-color;
+  color: var(--primary-color);
   border-color: $primary-color;
+  border-color: var(--primary-color);
 }
 .pagination .pagination-label {
   position: relative;
@@ -1732,18 +1787,5 @@ img[src$='#full'] {
 @media only screen and (max-width: 320px) {
   .pagination .pagination-label {
     display: none;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: $color-black;
-    color: $color-gray-98;
-  }
-}
-@media (prefers-dark-interface) {
-  body {
-    background-color: $color-black;
-    color: $color-gray-98;
   }
 }
