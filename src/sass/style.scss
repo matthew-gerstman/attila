@@ -1851,7 +1851,7 @@ img[src$='#full'] {
     display: none;
   }
 }
-@media (prefers-dark-interface), (prefers-color-scheme: dark) {
+@mixin dark-mode() {
   body {
     background-color: var(--color-gray-98) !important;
   }
@@ -1964,4 +1964,13 @@ img[src$='#full'] {
   .menu-button {
     background-color: transparent !important;
   }
+}
+
+@media (prefers-dark-interface), (prefers-color-scheme: dark) {
+  @include dark-mode;
+}
+
+.dark-mode,
+.view-app {
+  @include dark-mode;
 }
