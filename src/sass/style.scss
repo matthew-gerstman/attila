@@ -1969,8 +1969,3 @@ img[src$='#full'] {
 @media (prefers-dark-interface), (prefers-color-scheme: dark) {
   @include dark-mode;
 }
-
-.dark-mode,
-.view-site {
-  @include dark-mode;
-}
