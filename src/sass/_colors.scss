@@ -49,9 +49,6 @@ $primary-color: $color-blue-t; // define primary color
 }
 
 @media (prefers-dark-interface), (prefers-color-scheme: dark) {
-  --color-white: #000000;
-  --color-black: #ffffff;
-
   --color-gray-98: #212226;
   --color-gray-95: #212226;
   --color-gray-90: #151516;
@@ -70,4 +67,7 @@ $primary-color: $color-blue-t; // define primary color
   --color-social-twitter: #3ea9dd;
   --color-social-facebook: #3c5a98;
   --color-social-googleplus: #d14836;
+  body {
+    background-color: var(--color-gray-98);
+  }
 }
