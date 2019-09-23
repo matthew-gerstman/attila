@@ -1969,3 +1969,15 @@ img[src$='#full'] {
 @media (prefers-dark-interface), (prefers-color-scheme: dark) {
   @include dark-mode;
 }
+
+.buying-broadway {
+  &.top {
+    border-top: 1px solid $color-gray-90;
+  }
+  &.bottom {
+    border-bottom: 1px solid $color-gray-90;
+  }
+  a {
+    border-bottom: none;
+  }
+}
