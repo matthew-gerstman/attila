@@ -1,0 +1,17 @@
+[
+	{
+		"from": "/tag/tech/",
+		"to": "/tech/",
+		"permanent": false
+	},
+	{
+		"from": "/tag/theater/",
+		"to": "/theater/",
+		"permanent": false
+	},
+	{
+		"from": "/tag/travel/",
+		"to": "/travel/",
+		"permanent": false
+	}
+]

@@ -37,8 +37,21 @@
   <article class="{{post_class}}">
     <div class="inner">
 
+
       <section class="post-content">
+        {{#has tag="theater"}}
+        <a href="https://amzn.to/2m8kFqe" style="border-bottom:none" target="_blank"><img
+            src="https://www.matthewgerstman.com/content/images/2019/09/Horizontal.png" /></a>
+        {{/has}}
+
         {{content}}
+
+        {{#has tag="Theater"}}
+
+        <p>Thanks so much for reading! Check out my new book. Buying Broadway, available today on Amazon.</p>
+        <a href="https://amzn.to/2m8kFqe" style="border-bottom:none" target="_blank"><img
+            src="https://www.matthewgerstman.com/content/images/2019/09/Square.png" /></a>
+        {{/has}}
       </section>
 
       <section class="post-info">

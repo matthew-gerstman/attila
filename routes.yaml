@@ -1,0 +1,28 @@
+routes:
+  /:
+    controller: channel
+    template:
+      - index
+    filter: author:matthew
+
+collections:
+  /tech/:
+    permalink: /tech/{slug}/
+    template: index
+    filter: primary_tag:tech
+  /theater/:
+    permalink: /theater/{slug}/
+    template: index
+    filter: primary_tag:theater
+  /travel/:
+    permalink: /travel/{slug}/
+    template: index
+    filter: primary_tag:travel
+  /:
+    permalink: /{slug}/
+    template:
+      - index
+
+taxonomies:
+  tag: /{slug}/
+  author: /author/{slug}/
