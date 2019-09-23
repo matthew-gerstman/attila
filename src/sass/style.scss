@@ -1973,6 +1973,7 @@ img[src$='#full'] {
 .buying-broadway {
   &.top {
     border-top: 1px solid $color-gray-90;
+    padding-top: 20px;
   }
   &.bottom {
     border-bottom: 1px solid $color-gray-90;
