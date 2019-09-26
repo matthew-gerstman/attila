@@ -2013,7 +2013,8 @@ img[src$='#full'] {
   .hljs-subst {
     color: var(--color-blue-t);
   }
-  .hljs-number {
+  .hljs-number,
+  .hljs-attribute {
   }
   .hljs-tag,
   .hljs-tag .hljs-title,
