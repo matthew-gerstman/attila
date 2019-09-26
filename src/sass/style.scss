@@ -1964,21 +1964,65 @@ img[src$='#full'] {
   .menu-button {
     background-color: transparent !important;
   }
+
+  .buying-broadway {
+    &.top {
+      border-top: 1px solid $color-gray-90;
+      padding-top: 20px;
+    }
+    &.bottom {
+      border-bottom: 1px solid $color-gray-90;
+    }
+    a {
+      border-bottom: none;
+    }
+  }
+  .hljs {
+    color: white;
+  }
+  .hljs-function,
+  .hljs-keyword {
+    color: var(--color-blue-t);
+  }
+  .hljs-keyword,
+  .css .rule .hljs-keyword,
+  .hljs-winutils,
+  .nginx .hljs-title,
+  .hljs-subst,
+  .hljs-request,
+  .hljs-status {
+    color: var(--color-blue-t);
+  }
+  .hljs-title,
+  .hljs-id,
+  .scss .hljs-preprocessor {
+    color: var(--color-blue-15);
+  }
+
+  .hljs-number,
+  .hljs-hexcolor,
+  .ruby .hljs-constant {
+    color: var(--color-blue-t);
+  }
+  .hljs-built_in {
+    color: var(--color-yellow-100);
+  }
+  .hljs-string {
+    color: var(--color-red-95);
+  }
+  .hljs-subst {
+    color: var(--color-blue-t);
+  }
+  .hljs-number {
+  }
+  .hljs-tag,
+  .hljs-tag .hljs-title,
+  .hljs-rule .hljs-property,
+  .django .hljs-tag .hljs-keyword {
+    color: var(--color-blue-t);
+  }
 }
 
 @media (prefers-dark-interface), (prefers-color-scheme: dark) {
   @include dark-mode;
-}
-
-.buying-broadway {
-  &.top {
-    border-top: 1px solid $color-gray-90;
-    padding-top: 20px;
-  }
-  &.bottom {
-    border-bottom: 1px solid $color-gray-90;
-  }
-  a {
-    border-bottom: none;
-  }
 }
