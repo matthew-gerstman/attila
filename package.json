@@ -2,7 +2,7 @@
   "name": "matthew-attila",
   "description": "Ghost Theme",
   "demo": "http://attila.zutrinken.com",
-  "version": "2.0.58",
+  "version": "2.0.59",
   "engines": {
     "ghost": ">=2.1.0"
   },
