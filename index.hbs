@@ -23,17 +23,17 @@
     <span class="blog-description">
       Musings on
       <a href="/tag/tech/">
-        <span style="color: #1982C4">T</span><span style="color: #FFFFFF">ech</span>
+        <span style="color: #1982C4">Tech, </span>
       </a>
       <a href="/tag/theater/">
-        <span style="color: #1982C4">T</span><span style="color: #FFFFFF">heater</span>
+        <span style="color: #1982C4">Theater, </span>
       </a>
       and everything else.
-
-      {{/if}}
-      {{#if @blog.cover_image}}
-      <div class="blog-cover cover" style="background-image: url('{{img_url @blog.cover_image}}');"></div>
-      {{/if}}
+    </span>
+    {{/if}}
+    {{#if @blog.cover_image}}
+    <div class="blog-cover cover" style="background-image: url('{{img_url @blog.cover_image}}');"></div>
+    {{/if}}
   </div>
 </header>
 
